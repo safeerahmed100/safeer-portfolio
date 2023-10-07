@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+button{
+    background-color: red;
+    outline: none;
+border: none;
+padding: 8px 12px;
+color: white;
+border-radius: 4px;
+transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0 3px 6px 0 #ffffff;
+}
+/*Navbar Styling */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    z-index: 3;
+    padding: 15px 60px;
+
+
+}
+.nav-left h1{
+    font-size: 30px;
+}
+.nav-right a{
+    padding: 30px;
+}
+
+/* Hero Section Styling */
+.hero-section{
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+background-image: url(./Assests/bg-photo.jpg);
+background-position: center center;
+background-size: cover;
+}
+.hero-overlay {
+    background-color: black;
+    opacity: 0.7;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+.hero-text{
+    top: 30%;
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+padding: 30px 60px;    
+}
+
+.hero-text h2{
+    font-size: 20px;
+}
+.hero-text h3{
+    font-size: 60px;
+}
+.hero-text h4{
+    font-size: 30px;
+}
+
+/* About Section Styling */
+.about-container{
+    background-color: #03001C;
+    color: white;
+    padding: 30px 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-content-container h5,.project-container h5{
+    font-size: 30px;
+}
+.about-content-container{
+    width: 50%;
+}
+.about-image img{
+    width: 400px;
+    border-radius: 12px;
+
+}
+.about-options{
+    padding: 30px 0;
+}
+
+.about-options a{
+padding-right: 30px;
+}
+a{
+    transition: all 0.3s ease-in;
+}
+a:hover{
+
+    border-bottom: 1px solid red ;
+}
+
+/* Project section styling */
+
+.project-container{
+    background-color: black;
+    color: white;
+    padding: 30px 60px;
+    text-align: right;
+  
+}
+
+.project-gallery{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-card{
+    background-color: white;
+    width: 30%;
+    height: 50vh;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    transition: all 0.5s ease-in;
+
+}
+
+.project-card-content{
+    display: none;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+
+.project-card:hover .project-card-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+}
+
+.project-showcase-options{
+    padding: 15px 0;
+}
+.project-showcase-options span{
+    margin:0px 5px;
+}
+
+.contact{
+padding: 30px 60px;
+background-color: #03001C;
+
+}
+.contact h5{
+    padding: 30px;
+
+    text-align: center;
+    font-size: 30px;
+   
+}
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+
+}
+.contact-right{
+    width: 50%;
+}
+
+.contact-right form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-right form input{
+    margin: 10px 0;
+    height: 6vh;
+    border:none;
+    border-radius: 4px;
+    outline: none;
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+}
+.contact-right form input::placeholder{
+    color: grey;
+}
+
+.contact-icons{
+    padding: 5px 0;
+}
+
+.contact-icons i{
+    font-size: 30px;
+    margin: 10px 10px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+ 
+}
+
+.contact-info i{
+    font-size: 30px;
+    margin: 10px 10px;
+}
+.contact-left button{
+    width: max-content;
+}
+
+
+@media (max-width:1024px){
+
+    .hero-section{
+        height: auto;
+        text-align: center;
+    }
+    .hero-text h3{
+        font-size:30px
+    }
+    .hero-text h4{
+        font-size: 24px;
+    }
+    .nav-bar{
+        padding: 15px;
+    }
+    .nav-left h1{
+        font-size: 24px;
+    }
+    .nav-right{
+        display: none;
+    }
+
+    .about-container{
+        padding: 15px;
+        height: auto;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about-image{
+        padding:15px;
+        width: 100%;
+    }
+    .about-image img{
+        width:300px
+    }
+    .about-content-container{
+        padding: 15px;
+        width: 100%;
+    }
+   h5{
+    font-size: 24px!important;
+   }
+
+.project-container{
+    padding: 15px;
+    text-align: center;
+}
+
+.project-gallery{
+    padding: 15px;
+}
+
+.project-card{
+    width: 100%;
+}
+.contact{
+    padding: 15px;
+}
+
+.contact-container{
+    flex-direction: column;
+}
+.contact-left{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+.contact-right{
+    width: 100%;
+}
+
+}
