@@ -7,7 +7,7 @@ function About() {
   return (
     <div className='about-container'>
      < div className='about-image'>
-      <img src={myPhoto} alt='my-picture'/>
+      <img src={myPhoto} alt='Safeer Ahmed'/>
      </div>
      <div className='about-content-container'>
      <h5><Typewriter
@@ -24,9 +24,9 @@ My goal is to craft digital experiences that not only look great but also functi
 
 </p>
     <div className='about-options'>
-      <a>Skills</a>
-      <a>Experience</a>
-      <a>Education</a>
+      <span>Skills</span>
+      <span>Experience</span>
+      <span>Education</span>
     </div>
 
      </div>

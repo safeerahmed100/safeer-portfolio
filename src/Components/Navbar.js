@@ -7,10 +7,10 @@ function Navbar() {
         <h1>Safeer Ahmed</h1>
     </div>
     <div className='nav-right'>
-        <a>Home</a>
-        <a>About</a>
-        <a>Project</a>
-        <a>Contact</a>
+        <span>Home</span>
+        <span>About</span>
+        <span>Project</span>
+        <span>Contact</span>
     </div>
 
 </div>
